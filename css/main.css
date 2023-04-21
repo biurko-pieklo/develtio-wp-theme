@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+    font-family: 'Lato';
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand';
+    color: #1c3e95;
+    margin: 0;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 63px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Quicksand';
+    text-align: center;
+
+    display: block;
+    padding: 16px 50px;
+    min-width: 205px;
+    width: fit-content;
+
+    background-color: #fe7a22;
+    border-radius: 10px;
+}
+
+header {
+    position: sticky;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    color: #1c3e95;
+
+    box-shadow: 0 0 10px -5px #000;
+}
+
+img.logo {
+    object-fit: contain;
+    padding: 10px 0;
+}
+
+.header-menu ul li a {
+    font-size: 24px;
+    color: #1c3e95;
+}
+
+.header-menu ul {
+    display: flex;
+
+    margin: 40px 0 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.header-menu ul li {
+    padding: 15px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.section-1 {
+    display: flex;
+
+    background-image: url('../img/bg-family.png');
+    background-size: cover;
+    background-position-x: 100px;
+    background-repeat: no-repeat;
+
+    height: 730px;
+}
+
+.section-1 .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-1 .section-wrapper {
+    flex: 1;
+    align-self: flex-end;
+
+    padding: 48px 0 64px;
+    background-color: #1c3e95BF;
+}
+
+.section-1 .section-content h1 {
+    color: #fe7a22;
+    margin-bottom: 8px;
+}
+
+.section-1 .section-content h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 489px;
+    position: relative;
+    margin: 0 10px;
+}
+
+form {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    /**/height: 604px;/**/
+
+    padding: 40px;
+
+    background-color: #fff;
+    box-shadow: 0 8px 48px rgba(22, 22, 22, 0.08);
+
+    border-radius: 10px;
+}
+
+form h4 {
+    margin-bottom: 20px;
+}
+
+form input.text-input {
+    width: 100%;
+    font-size: 17px;
+
+    padding: 14px;
+    margin-bottom: 12px;
+
+    border: 1px solid #989494;
+}
+
+form span.checkbox {
+    display: flex;
+    align-items: flex-start;
+}
+
+form span.checkbox input {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    margin: 0;
+}
+
+form span.checkbox label {
+    margin-left: 28px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #979494;
+}
+
+form .btn {
+    margin: 16px auto 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#form_city {
+    flex: 1 1 60%;
+    margin-right: 12px;
+}
+
+#form_postal {
+    flex: 1 1 30%;
+}
+
+.section-2 {
+    background-image: url('../img/bg-home.png');
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    padding: 72px 0 96px;
+}
+
+.section-2 h2 {
+    margin-bottom: 8px;
+}
+
+.section-2 p:first-of-type {
+    margin-top: 24px;
+}
+
+.section-2 p:last-of-type {
+    margin-bottom: 52px;
+}
+
+.section-2 .container > * {
+    width: 793px;
+    max-width: 75%;
+}
+
+footer {
+    background-color: #1c3e95;
+    padding: 90px 0 60px;
+}
+
+footer .section-content {
+    display: flex;
+}
+
+.footer-menu {
+    flex: 1 1 25%;
+}
+
+.footer-menu-title {
+    margin-bottom: 15px;
+}
+
+.footer-menu ul {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-menu ul li {
+    line-height: 26px;
+    width: fit-content;
+}
+
+.footer-menu-title {
+    font-family: 'Quicksand';
+    font-size: 20px;
+}
+
+.footer-menu-title,
+.footer-menu a {
+    color: #fff;
+}
+
+.footer-menu :is(span, a) {
+    display: block;
+}
+
+.footer-menu a:hover,
+.footer-menu a.menu-current {
+    color: #fe7a22;
+}
+
+
+a.footer-menu-phone {
+    color: #fe7a22;
+    font-size: 25px;
+    font-weight: 700;
+}
